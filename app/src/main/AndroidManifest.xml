@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uga.cs.rideshare">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RideShare">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistrationActivity"
+            android:parentActivityName=".MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.REGISTRATION_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.MainActivity" />
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:parentActivityName=".MainActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.LOGIN_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.LoginActivity" />
+        </activity>
+        <activity android:name=".HomeActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.HOME_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.HomeActivity" />
+        </activity>
+        <activity android:name=".SelectionActivity"
+            android:parentActivityName=".HomeActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.SELECTION_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.SelectionActivity" />
+        </activity>
+        <activity android:name=".PostActivity">
+            <!--android:parentActivityName=".SelectionActivity">-->
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.POST_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.PostActivity" />
+        </activity>
+        <activity android:name=".ViewPostsActivity">
+        <!--android:parentActivityName=".SelectionActivity">-->
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.VIEW_POSTS_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.ViewPostsActivity" />
+        </activity>
+        <activity android:name=".ViewAllActivity">
+        <!--android:parentActivityName=".SelectionActivity">-->
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.VIEW_All_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.ViewAllActivity" />
+        </activity>
+        <activity android:name=".ViewAcceptedActivity">
+        <!--android:parentActivityName=".SelectionActivity">-->
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.VIEW_ACCEPTED_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.ViewAcceptedActivity" />
+        </activity>
+        <activity android:name=".ConfirmAcceptedActivity">
+        <!--android:parentActivityName=".SelectionActivity">-->
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.CONFIRM_ACCEPTED_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.ConfirmAcceptedActivity" />
+        </activity>
+        <activity android:name=".UpdateActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.UPDATE_ACTIVITY"
+                android:value="edu.uga.cs.rideshare.UpdateActivity" />
+        </activity>
+    </application>
+
+</manifest>
